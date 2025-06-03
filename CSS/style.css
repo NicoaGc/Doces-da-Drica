@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #ff00bf;
+    --secondary-color: #000000;
+    --text-color: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    
+}
+
+header {
+    background: black !important;
+    padding: 35px !important;
+    img {
+        border: 0;
+        border-radius: 100px;
+        width: 100px;
+        position: absolute;
+        left: 20px;
+        top: 5px;
+    }
+}
+
+navbar-nav{
+color: white;
+text-decoration: none;
+}
+
+ul li a:hover{
+color: rgb(255, 0, 191);
+text-decoration: none;
+}
+
+.Pparte{
+background-color: rgb(70, 9, 54);
+padding: 150px;
+}
+
+.titulop{
+    color: #ffffff;
+    font-size: 125px;
+    text-align: center;
+}
