@@ -15,25 +15,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-<nav class="navbar navbar-expand-lg ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<!-- Cabeçalho Bootstrap com fundo preto, texto branco e imagem redonda -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+
+    <!-- LOGO ou imagem redonda -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logodeliciasdadrica.jpg" alt="Logo" width="50" height="50" class="rounded-circle me-2">
+      <!-- Texto opcional ao lado da imagem -->
+      <span class="fw-bold">Delicias da Drica</span>
+    </a>
+
+    <!-- Botão do menu para celular -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-      </div>
+
+    <!-- Itens do menu -->
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contato</a>
+        </li>
+      </ul>
     </div>
+
   </div>
 </nav>
-    </header>
-
+<section>
+  <div class="container mt-5, bg-roxo">
+    <h1 class="text-center mb-4">Bem-vindo ao Delicias da Drica</h1>
+    <p class="text-center">Aqui você encontra os melhores doces finos para todas as ocasiões!</p>
+  </div>
+</section>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -118,6 +141,9 @@
 
   </div>
 </div>
+<p>
+  <a href="sobre.php">Sobre</a>
+</p>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
