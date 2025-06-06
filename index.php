@@ -27,60 +27,31 @@
 
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Produtos</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Contato</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="home">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="produtos">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="sobre">Contato</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
 
-<section class="bg-roxo">
-  <div class="container mt-5 ">
-    <h1 class="text-center mb-4">Bem-vindo ao Delicias da Drica</h1>
-    <p class="text-center">Aqui você encontra os melhores doces finos para todas as ocasiões!</p>
-  </div>
-</section>
-<?php
-$produtos = [
-    [
-        'imagem' => 'images/docesfinoscopo.jpg',
-        'nome' => 'Copo de chocolate ',
-        'descricao' => 'Um copo de chocolate com o recheio que quiser!'
-    ],
-    [
-        'imagem' => 'images/bombombranco.jpg',
-        'nome' => 'Bombom',
-        'descricao' => 'O melhor doce do seu jeito.'
-    ],
-    [
-        'imagem' => 'https://via.placeholder.com/300x200',
-        'nome' => 'Produto 3',
-        'descricao' => 'Descrição do produto 3.'
-    ]
-];
-?>
-<div class="container mt-4">
-    <div class="row">
-        <?php foreach ($produtos as $produto): ?>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="<?= htmlspecialchars($produto['imagem']) ?>" class="card-img-top" alt="Imagem do Produto">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><?= htmlspecialchars($produto['nome']) ?></h5>
-                        <p class="card-text"><?= htmlspecialchars($produto['descricao']) ?></p>
-                    </div>
-                </div>
-            </div>
-        <?php endforeach; ?>
-    </div>
-</div>
+<main>
+  <?php
+    $pagina = $_GET["param"] ?? "home";
 
-<p>
-  <a href="sobre.php">Sobre</a>
-</p>
+    $pagina = "pages/{$pagina}.php";
+    include "arrays.php";
+    if (file_exists($pagina)) {
+      include $pagina;
+    } else{
+      include "page/erro.php";
+    }
+    
+  ?>
+</main>
+
     <footer>
         <p>&copy; 2023 Doces da Drica. Todos os direitos reservados.</p>
         <p>Desenvolvido por Nicolas </p>
