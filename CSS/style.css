@@ -1,36 +1,26 @@
 :root {
-    --primary-color: #ff00bf;
-    --secondary-color: #000000;
+    --primary-color: #ca0098;
+    --secondary-color: #42042f;
     --text-color: #ffffff;
+    --bwhite: #e6e6e6;
+    --black: #000000;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
 }
 body{
     width: 100%;
-    
+    background: var(--secondary-color) !important;
 }
 
 header {
-    background: black !important;
-    padding: 35px !important;
-    img {
-        border: 0;
-        border-radius: 100px;
-        width: 100px;
-        position: absolute;
-        left: 20px;
-        top: 5px;
-    }
+    background: var(--primary-color) !important;
 }
 
-navbar-nav{
-color: white;
-text-decoration: none;
-}
 
 ul li a:hover{
 color: rgb(255, 0, 191);
@@ -43,12 +33,16 @@ padding: 150px;
 }
 
 .titulop{
-    color: #ffffff;
+    color: var(--text-color) !important;
     font-size: 125px;
     text-align: center;
 }
 
 .bg-roxo{
-    background-color: #000000;
-    padding: 50px;
+    background-color: var(--secondary-color) !important;
+    padding: 15px;
+    justify-content: center;
+    h1, p {
+        color: var(--text-color) !important;
+    }
 }
