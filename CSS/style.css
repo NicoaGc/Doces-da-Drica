@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #ad1888;
+    --secondary-color: #42042f;
+    --text-color: #ffffff;
+    --bwhite: #fff1e4;
+    --black: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+body{
+    width: 100%;
+    background: var(--text-color) !important;
+    h1, p {
+        color: var(--black) !important;
+    }
+}
+
+header {
+    background: var(--secondary-color) !important;
+    color: var(--black) !important;
+}
+
+nav a:hover {
+  color: var(--primary-color) !important;
+}
+nav ul, li, a{
+    color: var(--text-color);
+}
+
+h1 {
+  color: #7A28CB; 
+}
+
+.Pparte{
+background-color: var(--text-color);
+padding: 150px;
+}
+
+.titulop{
+    color: var(--text-color) !important;
+    font-size: 125px;
+    text-align: center;
+}
+
+.card-text{
+    color: #000 !important;
+}
+.card-custom {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #eeeeee;
+  transition: box-shadow 0.3s ease;
+}
+.card-section{
+font-size: 35px;
+color: var(--text-color) !important;
+}
+.card-body {
+  background-color: var(--bwhite) !important;      
+}
+.card-custom:hover {
+  box-shadow: 0 0 10px rgba(122, 40, 203, 0.3); /* roxo suave ao passar o mouse */
+}
+.card-custom .btn {
+  background-color: var(--secondary-color) !important;
+  color: var(--text-color) !important;
+}
+.card-custom .btn:hover {
+  background-color: var(--primary-color) !important;
+}
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border: none;
+  color: var(--text-color) !important;
+}
+.btn-primary:hover {
+  background-color: var(--primary-color) !important;
+}
