@@ -8,12 +8,12 @@ $produtos = [
     [
         'imagem' => 'images/bombombranco.jpg',
         'nome' => 'Bombom',
-        'descricao' => 'O melhor doce do seu jeito.'
+        'descricao' => 'Melhor do seu jeito, ninho, chocolate? Você escolhe!'
     ],
     [
         'imagem' => 'images/dcfinocoracao.jpg',
-        'nome' => 'Produto 3',
-        'descricao' => 'Descrição do produto 3.'
+        'nome' => 'Produto',
+        'descricao' => 'Coração de chocolate com recheio de chocolate,'
     ],
     [
         'imagem' => 'images/docesfinoscopo.jpg',
