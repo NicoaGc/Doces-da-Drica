@@ -1,7 +1,7 @@
 <?php
 $produtos = [
     [
-        'imagem' => 'images/docesfinoscopo.jpg',
+        'imagem' => 'images/doces2finoscopo.jpg',
         'nome' => 'Copo de chocolate ',
         'descricao' => 'Um copo de chocolate com o recheio que quiser!'
     ],

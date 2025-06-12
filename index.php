@@ -55,12 +55,22 @@
   ?>
 </main>
 
-    <footer>
-        <p>&copy; 2023 Doces da Drica. Todos os direitos reservados.</p>
-        <p>Desenvolvido por Nicolas </p>
-        <p>
-            <a href="#" title="fa-square-instagram" alt="Instagram" class="instagram"> <i class='bx bxl-instagram'></i> </a> 
-        </p>    
-    </footer>
+<footer class="bg-black text-white text-center py-2">
+  <div class="container">
+    <img src="images/logodeliciasdadrica.jpg" alt="Logo Doces da Drica" class="mb-2 rounded-circle" style="max-height: 60px;">
+    
+    <p class="mb-1 small">&copy; 2023 Doces da Drica. Todos os direitos reservados.</p>
+    <p class="mb-1 small">Desenvolvido por Nicolas</p>
+
+    <p class="mb-0">
+      <a href="#" title="Instagram" aria-label="Instagram" class="text-white fs-5 instagram">
+        <i class='bx bxl-instagram'></i>
+      </a>
+    </p>
+  </div>
+</footer>
+
+
+
 </body>
 </html>
