@@ -27,11 +27,11 @@ $imagens = [
             <h1 class="text-black">Valor do cento</h1>
             <h3 class="text-black">R$290,00</h3>
             <h2 class="text-black">Sabores</h2>
-                <p>
+                <p class="text-black">
                     Chocolate ao leite, Chocolate branco e Chocolate meio amargo
                 </p>
             <h2 class="text-black">Recheios</h2>
-                <p>Mousse de Nutella, Mousse de Morango, Mousse de Limão, Brigadeiro, Maracujá, Ninho</p>
+                <p class="text-black">Mousse de Nutella, Mousse de Morango, Mousse de Limão, Brigadeiro, Maracujá, Ninho</p>
             </div>
             <div class="text-center">
             <div class="d-grid gap-2 col-6 mx-auto">
