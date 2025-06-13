@@ -18,19 +18,19 @@ $imagens = [
             </div>
         </div>
         <div class="col-md-6">
-            <h1 class="card-text fw-bold mb-3">Nossos Doces Finos</h1>
-            <p class="card-text lead">
+            <h1 class="text-black fw-bold mb-3">Nossos Doces Finos</h1>
+            <p class="text-black lead">
                 Produzidos com muito carinho e ingredientes de qualidade.
                 Descubra o sabor irresistível que encanta.
             </p>
             <div>
-            <h1 class="card-text">Valor do cento</h1>
-            <h3 class="card-text">R$290,00</h3>
-            <h2 class="card-text">Sabores</h2>
+            <h1 class="text-black">Valor do cento</h1>
+            <h3 class="text-black">R$290,00</h3>
+            <h2 class="text-black">Sabores</h2>
                 <p>
                     Chocolate ao leite, Chocolate branco e Chocolate meio amargo
                 </p>
-            <h2 class="card-text">Recheios</h2>
+            <h2 class="text-black">Recheios</h2>
                 <p>Mousse de Nutella, Mousse de Morango, Mousse de Limão, Brigadeiro, Maracujá, Ninho</p>
             </div>
             <div class="text-center">
