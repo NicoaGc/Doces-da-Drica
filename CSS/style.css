@@ -3,7 +3,7 @@
 :root {
     --primary-color: #ad1888;
     --secondary-color: #42042f;
-    --secondaryfade-color: #69064b;
+    --secondaryfade-color: #24011a;
     --text-color: #ffffff;
     --bwhite: #fff1e4;
     --black: #000000;
@@ -17,7 +17,7 @@
 }
 body{
     width: 100%;
-    background: var(--secondary-color) !important;
+    background: var(--text-color) !important;
     h1, p {
         color: var(--text-color) !important;
     }
@@ -171,4 +171,6 @@ width: 100%;
 .whatsapp.btn:hover {
             box-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
           }
-          
+footer {
+    background-color: var(--secondary-color);
+}

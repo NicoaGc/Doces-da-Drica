@@ -55,20 +55,21 @@
   ?>
 </main>
 
-<footer class="bg-black text-white text-center py-2">
+<footer class="text-center py-1">
   <div class="container">
-    <img src="images/logodeliciasdadrica.jpg" alt="Logo Doces da Drica" class="mb-2 rounded-circle" style="max-height: 60px;">
+    <img src="images/logodeliciasdadrica.jpg" alt="Logo Doces da Drica" class="mb-1 rounded-circle" style="max-height: 50px;">
     
-    <p class="mb-1 small">&copy; 2023 Doces da Drica. Todos os direitos reservados.</p>
-    <p class="mb-1 small">Desenvolvido por Nicolas</p>
+    <p class="mb-0 small">&copy; 2023 Doces da Drica. Todos os direitos reservados.</p>
+    <p class="mb-0 small">Desenvolvido por Nicolas</p>
 
-    <p class="mb-0">
+    <p class="mt-1 mb-0">
       <a href="#" title="Instagram" aria-label="Instagram" class="text-white fs-5 instagram">
-        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-instagram' aria-hidden="true"></i>
       </a>
     </p>
   </div>
 </footer>
+
 
 
 
