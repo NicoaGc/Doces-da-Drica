@@ -27,7 +27,11 @@ header {
     background: var(--primary-color) !important;
     color: var(--black) !important;
 }
-
+.hero-banner{
+    .btn{
+    background: var(--primary-color) !important;
+}
+}
 nav a:hover {
   font-size: 20px;
   transition: .2s;
@@ -173,4 +177,7 @@ width: 100%;
           }
 footer {
     background-color: var(--secondary-color);
+}
+.btn{
+    background: var(--secondary-color) !important;
 }

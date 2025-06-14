@@ -39,6 +39,14 @@
     </div>
   </nav>
 </header>
+<section class="hero-banner position-relative text-white" style="background-image: url('images/bolobanner.png'); background-size: cover; background-position: center; height: 80vh;">
+
+  <!-- Botão fixado no canto inferior esquerdo -->
+  <a href="#experimente" class="btn btn-primary position-absolute" style="bottom: 100px; left: 160px;">
+    Quero experimentar
+  </a>
+</section>
+
 
 <main>
   <?php
@@ -55,13 +63,11 @@
   ?>
 </main>
 
-<footer class="text-center py-1">
+<footer class="text-center py-2">
   <div class="container">
     <img src="images/logodeliciasdadrica.jpg" alt="Logo Doces da Drica" class="mb-1 rounded-circle" style="max-height: 50px;">
     
-    <p class="mb-0 small">&copy; 2023 Doces da Drica. Todos os direitos reservados.</p>
-    <p class="mb-0 small">Desenvolvido por Nicolas</p>
-
+    <p class="mb-0 small">&copy; 2023 Doces da Drica. Todos os direitos reservados. Desenvolvido por Nicolas.</p>
     <p class="mt-1 mb-0">
       <a href="#" title="Instagram" aria-label="Instagram" class="text-white fs-5 instagram">
         <i class='bx bxl-instagram' aria-hidden="true"></i>
