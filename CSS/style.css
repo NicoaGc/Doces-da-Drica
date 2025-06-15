@@ -27,10 +27,26 @@ header {
     background: var(--primary-color) !important;
     color: var(--black) !important;
 }
-.hero-banner{
-    .btn{
-    background: var(--primary-color) !important;
+.hero-banner {
+ background-image: url("../images/bolobanner.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  color: white;
 }
+
+/* Estilo para o botão dentro do hero-banner */
+.hero-banner .btn {
+  background: var(--primary-color) !important;
+}
+
+/* Media query para telas pequenas */
+@media (max-width: 576px) {
+  .hero-banner {
+    background-size: contain !important;
+    height: 50vh !important;
+  }
 }
 nav a:hover {
   font-size: 20px;
@@ -79,7 +95,21 @@ padding-left: 35px;
 .card-custom:hover {
   box-shadow: 0 0 10px rgba(122, 40, 203, 0.3); /* roxo suave ao passar o mouse */
 }
+.card-cake {
+    width: 350px;
+  height: 1000px; /* garante que ocupe o espaço disponível */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
 
+.card-cake:hover {
+  transform: scale(1.02);
+}
+
+.card-cake .card-img-top {
+  height: 350px; /* aumenta a imagem */
+  object-fit: cover;
+}
 @media screen and (max-width: 768px) {
     .card h-30 {
 width: 100%;

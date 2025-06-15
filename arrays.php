@@ -2,8 +2,8 @@
 $bolos = [
     [
         'imagem' => 'images/bolobrigadeiro.png',
-        'nome' => 'Copo de chocolate ',
-        'descricao' => 'Um copo de chocolate com o recheio que quiser!'
+        'nome' => 'Bolo de brigadeiro ',
+        'descricao' => 'Bolo de brigadeiro'
     ],
     [
         'imagem' => 'images/bombombranco.jpg',

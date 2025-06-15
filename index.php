@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     </head>
 <body>
-<header class="" >
+<header>
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="#">
@@ -39,16 +39,8 @@
     </div>
   </nav>
 </header>
-<section class="hero-banner position-relative text-white" style="background-image: url('images/bolobanner.png'); background-size: cover; background-position: center; height: 80vh;">
-
-  <!-- Botão fixado no canto inferior esquerdo -->
-  <a href="#experimente" class="btn btn-primary position-absolute" style="bottom: 100px; left: 160px;">
-    Quero experimentar
-  </a>
-</section>
-
-
 <main>
+  <div class="container-xxl">
   <?php
     $pagina = $_GET["param"] ?? "home";
 
@@ -61,6 +53,7 @@
     }
     
   ?>
+  </div>
 </main>
 
 <footer class="text-center py-2">
@@ -75,9 +68,7 @@
     </p>
   </div>
 </footer>
-
-
-
-
+<!-- Bootstrap 5 JavaScript Bundle (necessário para o menu funcionar no mobile) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
