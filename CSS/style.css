@@ -48,11 +48,13 @@ header {
     height: 50vh !important;
   }
 }
+
 nav a:hover {
-  font-size: 20px;
+  font-size: 22.5px;
   transition: .2s;
 }
 nav ul, li, a{
+    font-size: 20px;
     color: var(--text-color);
 }
 

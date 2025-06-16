@@ -19,9 +19,8 @@
 <header>
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <img src="images/logodeliciasdadrica.jpg" alt="Logo" class="rounded-circle" style="height: 50px; width: auto;">
-        <span class="fw-bold text-white">Delicias da Drica</span>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="home">
+        <img src="images/logodel.png" alt="Logo"  style="height: 100px; width: auto;">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -58,9 +57,9 @@
 
 <footer class="text-center py-2">
   <div class="container">
-    <img src="images/logodeliciasdadrica.jpg" alt="Logo Doces da Drica" class="mb-1 rounded-circle" style="max-height: 50px;">
+    <img src="images/logodeliciasdadrica.jpg" alt="Logo Doces da Drica" class="mb-1 rounded-circle" style="max-height: 150px;">
     
-    <p class="mb-0 small">&copy; 2023 Doces da Drica. Todos os direitos reservados. Desenvolvido por Nicolas.</p>
+    <p class="mb-0">&copy; 2023 Doces da Drica. Todos os direitos reservados. Desenvolvido por Nicolas.</p>
     <p class="mt-1 mb-0">
       <a href="#" title="Instagram" aria-label="Instagram" class="text-white fs-5 instagram">
         <i class='bx bxl-instagram' aria-hidden="true"></i>
