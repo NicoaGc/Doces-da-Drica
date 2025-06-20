@@ -5,6 +5,51 @@
     Quero experimentar
   </a>
 </section>
+<div class="carousel-doces-container position-relative">
+  <h2 class="section-title">Mais Vendidos</h2>
+
+
+  <button class="carousel-arrow left" onclick="scrollCarousel(-1)">❮</button>
+
+  <div class="container-xxl">
+    <div class="carousel-doces-wrapper">
+      <div class="carousel-doces" id="carousel">
+        <?php foreach ($produtos as $produto): ?>
+          <div class="doce-card text-start p-2">
+            <img src="<?= htmlspecialchars($produto['imagem']) ?>" class="doce-card-img" alt="<?= htmlspecialchars($produto['nome']) ?>">
+            <div class="doce-card-body p-2 d-flex flex-column justify-content-between">
+              <h5 class="mb-1 text-dark"><?= htmlspecialchars($produto['nome']) ?></h5>
+              <p class="text-dark"><?= htmlspecialchars($produto['descricao']) ?></p>
+              <div class="text-center mt-auto">
+                <a href="produtos" class="btn btn-sm btn-primary">Entre em contato</a>
+              </div>
+            </div>
+          </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </div>
+
+  <!-- ❯ Seta direita FORA da .container-xxl -->
+  <button class="carousel-arrow right" onclick="scrollCarousel(1)">❯</button>
+</div>
+
+
+<script>
+function scrollCarousel(direction) {
+  const carousel = document.getElementById('carousel');
+  const cardWidth = 400; // largura fixa do card em px (igual no CSS)
+  
+  // Calcula o novo scrollLeft
+  carousel.scrollBy({
+    left: cardWidth * direction,
+    behavior: 'smooth'
+  });
+}
+
+</script>
+
+
 <section class="bg-roxo">
   <div class="container mt-5 ">
     <h1 class="text-center text-black mb-4">Bem-vindo ao Delicias da Drica</h1>

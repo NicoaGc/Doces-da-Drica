@@ -39,7 +39,6 @@
   </nav>
 </header>
 <main>
-  <div class="container-xxl">
   <?php
     $pagina = $_GET["param"] ?? "home";
 

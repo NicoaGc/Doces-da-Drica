@@ -42,7 +42,7 @@ $produtos = [
     [
         'imagem' => 'images/bombombranco.jpg',
         'nome' => 'Bombom',
-        'descricao' => 'Melhor do seu jeito, ninho, chocolate? Você escolhe!'
+        'descricao' => 'Melhor do seu jeito, chocolate? Você escolhe!'
     ],
     [
         'imagem' => 'images/dcfinocoracao.jpg',
