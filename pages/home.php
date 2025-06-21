@@ -14,12 +14,12 @@
   <div class="container-xxl">
     <div class="carousel-doces-wrapper">
       <div class="carousel-doces" id="carousel">
-        <?php foreach ($produtos as $produto): ?>
+        <?php foreach ($bolos as $bolo): ?>
           <div class="doce-card text-start p-2">
-            <img src="<?= htmlspecialchars($produto['imagem']) ?>" class="doce-card-img" alt="<?= htmlspecialchars($produto['nome']) ?>">
+            <img src="<?= htmlspecialchars($bolo['imagem']) ?>" class="doce-card-img" alt="<?= htmlspecialchars($bolo['nome']) ?>">
             <div class="doce-card-body p-2 d-flex flex-column justify-content-between">
-              <h5 class="mb-1 text-dark"><?= htmlspecialchars($produto['nome']) ?></h5>
-              <p class="text-dark"><?= htmlspecialchars($produto['descricao']) ?></p>
+              <h5 class="mb-1 text-dark"><?= htmlspecialchars($bolo['nome']) ?></h5>
+              <p class="text-dark"><?= htmlspecialchars($bolo['descricao']) ?></p>
               <div class="text-center mt-auto">
                 <a href="produtos" class="btn btn-sm btn-primary">Entre em contato</a>
               </div>
@@ -38,15 +38,29 @@
 <script>
 function scrollCarousel(direction) {
   const carousel = document.getElementById('carousel');
-  const cardWidth = 400; // largura fixa do card em px (igual no CSS)
+  const wrapper = document.querySelector('.carousel-doces-wrapper');
+  const card = document.querySelector('.doce-card');
   
-  // Calcula o novo scrollLeft
+  if (!carousel || !wrapper || !card) return;
+  
+  // Verifica se é dispositivo móvel
+  const isMobile = window.innerWidth <= 768;
+  
+  let scrollDistance;
+  
+  if (isMobile) {
+    // Mobile: move card por card
+    scrollDistance = card.offsetWidth + 20; // largura do card + gap
+  } else {
+    // Desktop: move uma tela inteira
+    scrollDistance = wrapper.offsetWidth;
+  }
+  
   carousel.scrollBy({
-    left: cardWidth * direction,
+    left: scrollDistance * direction,
     behavior: 'smooth'
   });
 }
-
 </script>
 
 

@@ -29,11 +29,15 @@ header {
 }
 .hero-banner {
  background-image: url("../images/bolobanner.png");
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  position: relative;
-  color: white;
+  background-size: cover;         /* Redimensiona a imagem para cobrir toda a área */
+  background-position: center;    /* Centraliza a imagem */
+  background-repeat: no-repeat;   /* Impede que a imagem se repita */
+  height: 100vh;                  /* Ocupa a altura total da tela */
+  display: flex;                 /* Para centralizar conteúdo, se quiser */
+  align-items: center;
+  justify-content: center;
+  color: white;                  /* Exemplo: texto branco em cima da imagem */
+  text-align: center;
 }
 
 /* Estilo para o botão dentro do hero-banner */
@@ -42,12 +46,13 @@ header {
 }
 
 /* Media query para telas pequenas */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .hero-banner {
-    background-size: contain !important;
-    height: 50vh !important;
+    background-image: url("../images/bolobannermob.png");
+    height: 60vh; /* Altura menor no mobile */
   }
 }
+
 
 nav a:hover {
   font-size: 22.5px;
@@ -210,6 +215,9 @@ width: 100%;
 footer {
     background-color: var(--secondary-color);
 }
+footer img {
+    max-height: 150px;
+}
 .btn{
     background: var(--secondary-color) !important;
 }
@@ -240,8 +248,8 @@ footer {
 }
 
 .doce-card {
-  min-width: 400px;
-  max-width: 400px;
+  min-width: 410px;
+  max-width: 410px;
   height: 500px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
@@ -281,7 +289,6 @@ footer {
 .doce-card-body a {
   align-self: center; /* centraliza o botão no card */
 }
-
 .carousel-arrow {
   position: absolute; /* trocado de fixed para absolute */
   top: 50%;

@@ -56,8 +56,7 @@
 
 <footer class="text-center py-2">
   <div class="container">
-    <img src="images/logodeliciasdadrica.jpg" alt="Logo Doces da Drica" class="mb-1 rounded-circle" style="max-height: 150px;">
-    
+    <img src="images/logodeliciasdadrica.jpg" alt="Logo Doces da Drica" class="mb-1 rounded-circle">
     <p class="mb-0">&copy; 2023 Doces da Drica. Todos os direitos reservados. Desenvolvido por Nicolas.</p>
     <p class="mt-1 mb-0">
       <a href="#" title="Instagram" aria-label="Instagram" class="text-white fs-5 instagram">

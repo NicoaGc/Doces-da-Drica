@@ -7,12 +7,12 @@ $bolos = [
     ],
     [
         'imagem' => 'images/bombombranco.jpg',
-        'nome' => 'Bombom',
-        'descricao' => 'Melhor do seu jeito, ninho, chocolate? Você escolhe!'
+        'nome' => 'Bolo',
+        'descricao' => 'Melhor do seu jeito. Você escolhe!'
     ],
     [
         'imagem' => 'images/dcfinocoracao.jpg',
-        'nome' => 'Produto',
+        'nome' => 'Bolo',
         'descricao' => 'Coração de chocolate com recheio de chocolate,'
     ],
     [
