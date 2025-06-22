@@ -13,26 +13,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Lexend,'Arial Narrow Bold', sans-serif;
+    font-family: "Lexend",'Arial Narrow Bold', sans-serif;
 }
 body{
     width: 100%;
     background: var(--text-color) !important;
-    h1, p {
-        color: var(--text-color) !important;
-    }
+    overflow-x: hidden;
 }
+  body h1, p{
+    color: var(--text-color) !important;
+  }
 
 header {
     background: var(--primary-color) !important;
     color: var(--black) !important;
 }
 .hero-banner {
- background-image: url("../images/bolobanner.png");
-  background-size: cover;         /* Redimensiona a imagem para cobrir toda a área */
-  background-position: center;    /* Centraliza a imagem */
-  background-repeat: no-repeat;   /* Impede que a imagem se repita */
-  height: 100vh;                  /* Ocupa a altura total da tela */
+  height: 90vh;                  /* Ocupa a altura total da tela */
   display: flex;                 /* Para centralizar conteúdo, se quiser */
   align-items: center;
   justify-content: center;
@@ -48,8 +45,7 @@ header {
 /* Media query para telas pequenas */
 @media (max-width: 768px) {
   .hero-banner {
-    background-image: url("../images/bolobannermob.png");
-    height: 60vh; /* Altura menor no mobile */
+    height: 240px; /* Altura menor no mobile */
   }
 }
 
@@ -118,6 +114,10 @@ padding-left: 35px;
   object-fit: cover;
 }
 @media screen and (max-width: 768px) {
+  .error404{
+    max-height: 150px;
+    width: auto;
+  }
     .card h-30 {
 width: 100%;
     }
@@ -314,4 +314,8 @@ footer img {
 .carousel-arrow:hover {
   opacity: 1;
 }
-
+@media (max-width: 576px){
+.doce-card{
+  
+ }
+}

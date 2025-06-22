@@ -1,24 +1,24 @@
 <?php
 $bolos = [
     [
-        'imagem' => 'images/bolobrigadeiro.png',
+        'imagem' => 'images/bolobrigadeiro1.png',
         'nome' => 'Bolo de brigadeiro ',
         'descricao' => 'Bolo de brigadeiro'
     ],
     [
-        'imagem' => 'images/bombombranco.jpg',
-        'nome' => 'Bolo',
-        'descricao' => 'Melhor do seu jeito. Você escolhe!'
+        'imagem' => 'images/boloani.png',
+        'nome' => 'Bolo de Aniversário',
+        'descricao' => 'Celebre esse momento!'
     ],
     [
-        'imagem' => 'images/dcfinocoracao.jpg',
-        'nome' => 'Bolo',
-        'descricao' => 'Coração de chocolate com recheio de chocolate,'
+        'imagem' => 'images/bolofaz.png',
+        'nome' => 'Bolo de Fazendinha',
+        'descricao' => 'Uma fazendinha para sua criança!'
     ],
     [
-        'imagem' => 'images/docesfinoscopo.jpg',
-        'nome' => 'Copo de chocolate ',
-        'descricao' => 'Um copo de chocolate com o recheio que quiser!'
+        'imagem' => 'images/bolomoa1.png',
+        'nome' => 'Bolo da Moana',
+        'descricao' => 'Moana'
     ],
     [
         'imagem' => 'images/bombombranco.jpg',

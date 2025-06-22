@@ -1,12 +1,10 @@
-<section class="hero-banner text-white d-flex align-items-center justify-content-center">
-
-  <!-- Botão fixado no canto inferior esquerdo -->
-  <a href="#experimente" class="btn btn-primary position-absolute" style="bottom: 100px; left: 160px;">
-    Quero experimentar
-  </a>
+<section>
+<a href="produtos">
+<img class="hero-banner" src="images/bolobanner.png" alt="Bolos">
+</a>
 </section>
 <div class="carousel-doces-container position-relative">
-  <h2 class="section-title">Mais Vendidos</h2>
+  <h1 class="section-title text-center text-black">Nossos Bolos</h1>
 
 
   <button class="carousel-arrow left" onclick="scrollCarousel(-1)">❮</button>
@@ -15,7 +13,7 @@
     <div class="carousel-doces-wrapper">
       <div class="carousel-doces" id="carousel">
         <?php foreach ($bolos as $bolo): ?>
-          <div class="doce-card text-start p-2">
+          <div class="doce-card h-100 d-flex flex-column text-start p-2">
             <img src="<?= htmlspecialchars($bolo['imagem']) ?>" class="doce-card-img" alt="<?= htmlspecialchars($bolo['nome']) ?>">
             <div class="doce-card-body p-2 d-flex flex-column justify-content-between">
               <h5 class="mb-1 text-dark"><?= htmlspecialchars($bolo['nome']) ?></h5>
