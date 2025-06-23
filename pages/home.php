@@ -1,11 +1,26 @@
-<section>
-<a href="produtos">
-<img class="hero-banner" src="images/bolobanner.png" alt="Bolos">
-</a>
-</section>
-<div class="carousel-doces-container position-relative">
-  <h1 class="section-title text-center text-black">Nossos Bolos</h1>
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <?php foreach ($imagens as $index => $imagem): ?>
+      <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+        <img src="<?= htmlspecialchars($imagem) ?>" class="d-block w-100 hero-img" alt="Banner <?= $index + 1 ?>">
+      </div>
+    <?php endforeach; ?>
+  </div>
 
+  <!-- Setas de navegação -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="text-black">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="text-black" >Próximo</span>
+  </button>
+</div>
+
+<div class="carousel-doces-container position-relative">
+  <h1 class="title text-center text-black">Bolos</h1>
+  <h2 class="section-title text-center text-black">Decorações</h>
 
   <button class="carousel-arrow left" onclick="scrollCarousel(-1)">❮</button>
 
@@ -31,37 +46,6 @@
   <!-- ❯ Seta direita FORA da .container-xxl -->
   <button class="carousel-arrow right" onclick="scrollCarousel(1)">❯</button>
 </div>
-
-
-<script>
-function scrollCarousel(direction) {
-  const carousel = document.getElementById('carousel');
-  const wrapper = document.querySelector('.carousel-doces-wrapper');
-  const card = document.querySelector('.doce-card');
-  
-  if (!carousel || !wrapper || !card) return;
-  
-  // Verifica se é dispositivo móvel
-  const isMobile = window.innerWidth <= 768;
-  
-  let scrollDistance;
-  
-  if (isMobile) {
-    // Mobile: move card por card
-    scrollDistance = card.offsetWidth + 20; // largura do card + gap
-  } else {
-    // Desktop: move uma tela inteira
-    scrollDistance = wrapper.offsetWidth;
-  }
-  
-  carousel.scrollBy({
-    left: scrollDistance * direction,
-    behavior: 'smooth'
-  });
-}
-</script>
-
-
 <section class="bg-roxo">
   <div class="container mt-5 ">
     <h1 class="text-center text-black mb-4">Bem-vindo ao Delicias da Drica</h1>

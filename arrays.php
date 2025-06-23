@@ -1,4 +1,9 @@
 <?php
+$imagens = [
+  'images/bolobanner.png',
+  'images/bannerdc.png',
+  'images/bannerbriga.png'
+];
 $bolos = [
     [
         'imagem' => 'images/bolobrigadeiro1.png',
@@ -21,14 +26,14 @@ $bolos = [
         'descricao' => 'Moana'
     ],
     [
-        'imagem' => 'images/bombombranco.jpg',
-        'nome' => 'Bombom',
-        'descricao' => 'O melhor doce do seu jeito.'
+        'imagem' => 'images/boloeuca.png',
+        'nome' => 'Bolo de Eucaristia',
+        'descricao' => 'Que tal comemorar esse passo com um belo bolo!'
     ],
     [
-        'imagem' => 'images/dcfinocoracao.jpg',
-        'nome' => 'Produto 3',
-        'descricao' => 'Descrição do produto 3.'
+        'imagem' => 'images/bolouni.png',
+        'nome' => 'Bolo de Unicórnio',
+        'descricao' => 'Um unicórnio em um bolo mágico!'
     ]
 ];
 ?>

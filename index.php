@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="index.js"></script>
     </head>
-<body>
+    <body>
+<div class="layout">
 <header>
   <nav class="navbar navbar-expand-lg">
     <div class="container">
@@ -59,12 +61,13 @@
     <img src="images/logodeliciasdadrica.jpg" alt="Logo Doces da Drica" class="mb-1 rounded-circle">
     <p class="mb-0">&copy; 2023 Doces da Drica. Todos os direitos reservados. Desenvolvido por Nicolas.</p>
     <p class="mt-1 mb-0">
-      <a href="#" title="Instagram" aria-label="Instagram" class="text-white fs-5 instagram">
+      <a href="https://www.instagram.com/deliciasdadrica11?utm_source=qr&igsh=MW9naG5ucGZydmJrYg==" title="Instagram" aria-label="Instagram" class="text-white fs-5 instagram">
         <i class='bx bxl-instagram' aria-hidden="true"></i>
       </a>
     </p>
   </div>
 </footer>
+</div>
 <!-- Bootstrap 5 JavaScript Bundle (necessário para o menu funcionar no mobile) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
