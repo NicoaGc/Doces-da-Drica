@@ -19,7 +19,7 @@
     <?php foreach ($delicias as $delicia): ?>
       <div class="col-12 col-md-6 col-lg-4 mb-4">
         <div class="h-100 d-flex flex-column text-start p-2">
-          <div class="fino-img-wrapper position-relative">
+          <div class="varios-img-wrapper">
             <?php 
               $imagens = is_array($delicia['imagem']) ? $delicia['imagem'] : [$delicia['imagem']];
               foreach ($imagens as $i => $img): 

@@ -1,88 +1,112 @@
-<body>
 <?php
-// Array com os caminhos das imagens do produto
 $imagens = [
-    "images/bombombranco.jpg",
-    "images/doces2finoscopo.jpg",
-    "images/dcfinocoracao.jpg"
+  "images/bombombranco.jpg",
+  "images/copouva.jpg",
+  "images/dcfinocoracao.jpg",
+  "images/dcfinoanel.jpg",
+  "images/doces2finoscopo.jpg"
 ];
 ?>
 
-<div class="container py-5">
-    <div class="row align-items-center">
-        <div class="col-md-6 text-center mb-4 mb-md-0">
-            <div id="carrossel-js">
-                <?php foreach ($imagens as $index => $imagem): ?>
-                    <img src="<?= $imagem ?>" class="img-fluid rounded shadow <?= $index === 0 ? 'ativo' : '' ?>" style="display: <?= $index === 0 ? 'block' : 'none' ?>;">
-                <?php endforeach; ?>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h1 class="text-black fw-bold mb-3">Nossos Doces Finos</h1>
-            <p class="text-black lead">
-                Produzidos com muito carinho e ingredientes de qualidade.
-                Descubra o sabor irresistível que encanta.
-            </p>
-            <div>
-            <h1 class="text-black">Valor do cento</h1>
-            <h3 class="text-black">R$290,00</h3>
-            <h2 class="text-black">Sabores</h2>
-                <p class="text-black">
-                    Chocolate ao leite, Chocolate branco e Chocolate meio amargo
-                </p>
-            <h2 class="text-black">Recheios</h2>
-                <p class="text-black">Mousse de Nutella, Mousse de Morango, Mousse de Limão, Brigadeiro, Maracujá, Ninho</p>
-            </div>
-            <div class="text-center">
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <a class="whatsapp btn btn-success" type="button"><i class="fa-brands fa-whatsapp"></i>Entre em contato</a>
-                </div>
-            </div>
-        </div>
+<style>
+  .produto-carrossel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .produto-carrossel-wrapper {
+      height: 500px;
+    }
+  }
+
+  .produto-carrossel-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+
+  .produto-carrossel-wrapper img.imagem-visivel {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .btn-whatsapp {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  .produto-info h2 {
+    margin-top: 20px;
+  }
+</style>
+
+<div class="container my-4">
+  <div class="row align-items-center">
+    <!-- Imagem à esquerda (desktop) / cima (mobile) -->
+    <div class="col-12 col-md-6 mb-4 mb-md-0">
+      <div class="produto-carrossel-wrapper" id="carrossel-produto">
+        <?php foreach ($imagens as $i => $img): ?>
+          <img 
+            src="<?= htmlspecialchars($img) ?>" 
+            alt="Imagem <?= $i + 1 ?>"
+            class="<?= $i === 0 ? 'imagem-visivel' : '' ?>">
+        <?php endforeach; ?>
+      </div>
     </div>
+
+    <!-- Texto à direita (desktop) / abaixo (mobile) -->
+    <div class="col-12 col-md-6 produto-info">
+      <h1 class="fw-bold text-black mb-3">Nossos Doces Finos</h1>
+      <p class="lead text-black">
+        Produzidos com muito carinho e ingredientes de qualidade.<br>
+        Descubra o sabor irresistível que encanta.
+      </p>
+
+      <h2 class="text-black">Valor do cento</h2>
+      <h3 class="text-success">R$290,00</h3>
+
+      <h2 class="text-black">Sabores</h2>
+      <p class="text-black">
+        Chocolate ao leite, Chocolate branco, Chocolate meio amargo
+      </p>
+
+      <h2 class="text-black">Recheios</h2>
+      <p class="text-black">
+        Mousse de Nutella, Morango, Limão, Brigadeiro, Maracujá, Ninho
+      </p>
+
+      <div class="text-center mt-4">
+        <a href="https://wa.me/554491159547" class="btn btn-success btn-whatsapp" target="_blank">
+          <i class="fab fa-whatsapp me-2"></i>Entre em contato
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
-
 <script>
-const imagens = document.querySelectorAll('#carrossel-js img');
-let indexAtual = 0;
+  const carrosselContainer = document.querySelector('#carrossel-produto');
+  const imagens = carrosselContainer.querySelectorAll('img');
+  let atual = 0;
 
-function mostrarImagem(novoIndex) {
-  if (novoIndex === indexAtual) return;
-
-  const atual = imagens[indexAtual];
-  const proxima = imagens[novoIndex];
-
-  // Fade out atual
-  atual.style.transition = 'opacity 0.5s ease';
-  atual.style.opacity = 0;
-
-  // Depois do fade out, esconde atual e mostra próximo com fade in
-  setTimeout(() => {
-    atual.style.display = 'none';
-    atual.classList.remove('ativo');
-
-    proxima.style.display = 'block';
-    proxima.style.opacity = 0;
-    proxima.classList.add('ativo');
-
-    // Fade in proxima
-    setTimeout(() => {
-      proxima.style.transition = 'opacity 0.5s ease';
-      proxima.style.opacity = 1;
-    }, 50);
-
-    indexAtual = novoIndex;
-  }, 500);
-}
-
-// Exemplo: Avançar para a próxima imagem a cada 3s
-setInterval(() => {
-  let proximoIndex = (indexAtual + 1) % imagens.length;
-  mostrarImagem(proximoIndex);
-}, 3000);
-
+  setInterval(() => {
+    imagens[atual].classList.remove('imagem-visivel');
+    atual = (atual + 1) % imagens.length;
+    imagens[atual].classList.add('imagem-visivel');
+  }, 3000);
 </script>
-
-</body>
-

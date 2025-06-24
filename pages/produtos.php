@@ -1,51 +1,31 @@
-<style>
-  .img-link {
-    position: relative;
-    display: block;
-  }
-  .img-link img {
-    display: block;
-    width: auto;
-    height: 300px;
-  }
-  .img-link .caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(255,255,255,0.9);
-    color: #000;
-    padding: 0.3rem 0.5rem;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-</style>
+<h1 class="text-center text-black">Aprecie essas delicias</h1>
+<div class="container my-4">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+      <a href="bolos" target="_blank" class="img-container">
+        <img src="images/bolobrigadeiro1.png" alt="bolos" />
+        <div class="img-overlay-title">Bolos</div>
+      </a>
+    </div>
 
-<div class="container py-4">
-  <div class="row">
-    <div class="col-12 col-md-3 mb-3">
-      <a href="bolos" target="_blank" rel="noopener noreferrer" class="img-link">
-        <img src="images/bolobrigadeiro1.png" alt="Imagem 1" />
-        <div class="caption">Nome 1</div>
+    <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+      <a href="docesfinos" target="_blank" class="img-container">
+        <img src="images/copouva.jpg" alt="doces finos" />
+        <div class="img-overlay-title">Doces Finos</div>
       </a>
     </div>
-    <div class="col-12 col-md-3 mb-3">
-      <a href="docesfinos" target="_blank" rel="noopener noreferrer" class="img-link">
-        <img src="images/copouva.jpg" alt="Imagem 2" />
-        <div class="caption">Nome 2</div>
+
+    <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+      <a href="brigadeiros-tradicionais" target="_blank" class="img-container">
+        <img src="images/tbri.jpg" alt="brigadeiros tradicionais" />
+        <div class="img-overlay-title">Brigadeiros Tradicionais</div>
       </a>
     </div>
-    <div class="col-12 col-md-3 mb-3">
-      <a href="brigadeiros-tradicionais" target="_blank" rel="noopener noreferrer" class="img-link">
-        <img src="images/tbri.jpg" alt="Imagem 3" />
-        <div class="caption">Nome 3</div>
-      </a>
-    </div>
-    <div class="col-12 col-md-3 mb-3">
-      <a href="brigadeiros-gourmets" target="_blank" rel="noopener noreferrer" class="img-link">
-        <img src="images/brigarosa.jpg" alt="Imagem 4" />
-        <div class="caption">Nome 4</div>
+
+    <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+      <a href="brigadeiros-gourmets" target="_blank" class="img-container">
+        <img src="images/brigarosa.jpg" alt="brigadeiros gourmets" />
+        <div class="img-overlay-title">Brigadeiros Gourmets</div>
       </a>
     </div>
   </div>
