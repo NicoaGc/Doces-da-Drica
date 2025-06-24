@@ -2,14 +2,14 @@
 <div class="container my-4">
   <div class="row justify-content-center">
     <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
-      <a href="bolos" target="_blank" class="img-container">
+      <a href="bolos" class="img-container">
         <img src="images/bolobrigadeiro1.png" alt="bolos" />
         <div class="img-overlay-title">Bolos</div>
       </a>
     </div>
 
     <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
-      <a href="docesfinos" target="_blank" class="img-container">
+      <a href="docesfinos" class="img-container">
         <img src="images/copouva.jpg" alt="doces finos" />
         <div class="img-overlay-title">Doces Finos</div>
       </a>

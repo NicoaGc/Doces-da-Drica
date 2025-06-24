@@ -43,7 +43,7 @@
             <h5 class="mb-1 text-dark"><?= htmlspecialchars($bolo['nome']) ?></h5>
             <p class="text-dark"><?= htmlspecialchars($bolo['descricao']) ?></p>
             <div class="text-center mt-auto">
-              <a href="produtos" class="btn btn-sm btn-primary">Entre em contato</a>
+              <a href="bolos" class="btn btn-sm btn-primary">Entre em contato</a>
             </div>
           </div>
         </div>
@@ -106,9 +106,4 @@
     <?php endforeach; ?>
   </div>
 </div>
-</section>
-<section>
-  <p>
-    Não achou o qu queria
-  </p>
 </section>

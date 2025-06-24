@@ -112,5 +112,25 @@ $finos = [
   "images/coracaomara.jpg",
   "images/coracaorosa.jpg"
 ];
+$bolospro = [
+  "images/bolobrigadeiro1.png",
+  "images/boloeuca.png",
+  "images/bolofaz.png",
+  "images/bolomoa1.png",
+  "images/bolouni.png"
+];
+$brigat = [
+  "images/tbri.jpg",
+  "images/beiji.jpg",
+  "images/brithe.jpg",
+  "images/briso.png"
+];
+$brigag = [
+  "images/gmoni.png",
+  "images/gmornu.jpg",
+  "images/gbri.jpg",
+  "images/briame.jpg",
+  "images/brigarosa.jpg"
+];
 ?>
 

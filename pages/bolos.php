@@ -3,7 +3,7 @@
     <!-- Imagem à esquerda (desktop) / cima (mobile) -->
     <div class="col-12 col-md-6 mb-4 mb-md-0">
       <div class="produto-carrossel-wrapper" id="carrossel-produto">
-        <?php foreach ($finos as $i => $img): ?>
+        <?php foreach ($bolospro as $i => $img): ?>
           <img 
             src="<?= htmlspecialchars($img) ?>" 
             alt="Imagem <?= $i + 1 ?>"
@@ -14,25 +14,31 @@
 
     <!-- Texto à direita (desktop) / abaixo (mobile) -->
     <div class="col-12 col-md-6 produto-info">
-      <h1 class="fw-bold text-black mb-3">Nossos Doces Finos</h1>
+      <h1 class="fw-bold text-black mb-3">Nossos Bolos</h1>
       <p class="lead text-black">
         Produzidos com muito carinho e ingredientes de qualidade.<br>
         Descubra o sabor irresistível que encanta.
       </p>
+<h2 class="text-black">Sabores</h2>
+<h2 class="text-success fs-5">R$ 45,00/kg</h2>
+<p class="text-black">
+  Doce de leite com abacaxi, Doce de leite com pêssego, Doce de leite com coco, Cocada com abacaxi, Doce de leite puro.
+</p>
 
-      <h2 class="text-black">Valor do cento</h2>
-      <h3 class="text-success">R$290,00</h3>
+<h2 class="text-success fs-5">R$ 55,00/kg</h2>
+<p class="text-black">
+  Creme belga com pêssego, Creme belga com abacaxi, Maracujá trufado, Sensação, Prestígio, Ouro Branco, Sonho de Valsa.
+</p>
 
-      <h2 class="text-black">Sabores</h2>
-      <p class="text-black">
-        Chocolate ao leite, Chocolate branco, Chocolate meio amargo
-      </p>
+<h2 class="text-success fs-5">R$ 65,00/kg</h2>
+<p class="text-black">
+  Brigadeiro com KitKat, Floresta Negra, Dois Amores, Brigadeiro com morango, 4 Leites Trufado, Ninho com morango, Ninho com Nutella, Ferrero Rocher.
+</p>
 
-      <h2 class="text-black">Recheios</h2>
-      <p class="text-black">
-        Mousse de Nutella, Morango, Limão, Brigadeiro, Maracujá, Ninho
-      </p>
 
+      <h2 class="text-black">Informações adicionais</h2>
+      <p class="text-black"><strong>Sabores de massa:</strong> Baunilha ou chocolate</p>
+      <p class="text-black"><strong>Decoração:</strong> Com brilho e pó dourado (acréscimo de R$ 10,00)</p>
       <div class="text-center mt-4">
         <a href="https://wa.me/554491159547" class="btn btn-success btn-whatsapp" target="_blank">
           <i class="fab fa-whatsapp me-2"></i>Entre em contato
