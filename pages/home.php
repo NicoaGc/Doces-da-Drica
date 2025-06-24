@@ -1,19 +1,22 @@
-<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <?php foreach ($imagens as $index => $imagem): ?>
-      <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
-        <img src="<?= htmlspecialchars($imagem) ?>" class="d-block w-100 hero-img" alt="Banner <?= $index + 1 ?>">
-      </div>
-    <?php endforeach; ?>
+<div class="hero-carousel-wrapper">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <?php foreach ($imagens as $index => $imagem): ?>
+        <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+          <a href="<?= $imagem['link'] ?>">
+            <img src="<?= $imagem['src'] ?>" class="d-block w-100 hero-img" alt="Banner <?= $index + 1 ?>">
+          </a>
+        </div>
+      <?php endforeach; ?>
+    </div>
+    <!-- Setas (opcional) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
   </div>
-
-  <!-- Setas de navegação -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </button>
 </div>
 
 <section class="bg-roxo">
@@ -57,10 +60,10 @@
   <h1 class="title text-center text-black">Doces finos</h1>
 
 <div class="container">
-  <div class="row">
+  <div class="row justify-content-center">
     <?php foreach ($dcfinos as $dcfino): ?>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="fino-card h-100 d-flex flex-column text-start p-2">
+      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="fino-card h-100 d-flex flex-column text-start p-2 mx-auto" style="max-width: 320px;">
           <div class="fino-img-wrapper position-relative">
             <?php foreach ($dcfino['imagem'] as $i => $img): ?>
               <img src="<?= htmlspecialchars($img) ?>" class="fino-card-img img-<?= $i ?>" alt="<?= htmlspecialchars($dcfino['nome']) ?>">
@@ -78,14 +81,14 @@
     <?php endforeach; ?>
   </div>
 </div>
-<div>
+<section>
   <h1 class="title text-center text-black">Brigadeiros clássicos e Gourmets</h1>
 
 <div class="container">
   <div class="row justify-content-center">
     <?php foreach ($brigadeiros as $brigadeiro): ?>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="fino-card h-100 d-flex flex-column text-start p-2">
+      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="fino-card h-100 d-flex flex-column text-start p-2 mx-auto" style="max-width: 320px;">
           <div class="fino-img-wrapper position-relative">
             <?php foreach ($brigadeiro['imagem'] as $i => $img): ?>
               <img src="<?= htmlspecialchars($img) ?>" class="fino-card-img img-<?= $i ?>" alt="<?= htmlspecialchars($brigadeiro['nome']) ?>">
@@ -103,3 +106,9 @@
     <?php endforeach; ?>
   </div>
 </div>
+</section>
+<section>
+  <p>
+    Não achou o qu queria
+  </p>
+</section>

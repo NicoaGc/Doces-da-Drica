@@ -1,14 +1,14 @@
 <?php
 $imagens = [
-  'images/bolobanner.png',
-  'images/bannerdc.png',
-  'images/bannerbriga.png'
+  ['src' => 'images/bolobanner.png', 'link' => 'bolos'],
+  ['src' => 'images/bannerdc.png', 'link' => 'docesfinos'],
+  ['src' => 'images/bannerbriga.png', 'link' => 'brigadeiros'],
 ];
 $bolos = [
     [
         'imagem' => 'images/bolobrigadeiro1.png',
         'nome' => 'Bolo de brigadeiro ',
-        'descricao' => 'Bolo de brigadeiro'
+        'descricao' => 'Bolo de brigadeiro, aquele chocolate inesquecível!'
     ],
     [
         'imagem' => 'images/boloani.png',
@@ -23,7 +23,7 @@ $bolos = [
     [
         'imagem' => 'images/bolomoa1.png',
         'nome' => 'Bolo da Moana',
-        'descricao' => 'Moana'
+        'descricao' => 'Trazendo uma guerreira corajosa Moana!'
     ],
     [
         'imagem' => 'images/boloeuca.png',
@@ -88,7 +88,24 @@ $brigadeiros = [
 ];
 ?>
 <?php
-$brigadeirosG = [
-
+$delicias = [
+    [
+        'imagem' => [
+            'images/copouva.jpg',
+            'images/docesfinoscopo.jpg'
+        ]
+    ],
+    [
+        'imagem' => [
+            'images/bolobrigadeiro1.png',
+            'images/bolofaz.png'
+        ]
+    ],
+    [
+        'imagem' => [
+            'images/tbri.jpg',
+            'images/briso.png'
+        ]
+    ]
 ];
-?>
+
