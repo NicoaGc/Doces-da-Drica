@@ -16,16 +16,9 @@
     </div>
 
     <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
-      <a href="brigadeiros-tradicionais" target="_blank" class="img-container">
+      <a href="brigadeiros" class="img-container">
         <img src="images/tbri.jpg" alt="brigadeiros tradicionais" />
-        <div class="img-overlay-title">Brigadeiros Tradicionais</div>
-      </a>
-    </div>
-
-    <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
-      <a href="brigadeiros-gourmets" target="_blank" class="img-container">
-        <img src="images/brigarosa.jpg" alt="brigadeiros gourmets" />
-        <div class="img-overlay-title">Brigadeiros Gourmets</div>
+        <div class="img-overlay-title">Brigadeiros Tradicionais e Gourmets</div>
       </a>
     </div>
   </div>

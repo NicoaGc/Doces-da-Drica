@@ -36,8 +36,6 @@ $bolos = [
         'descricao' => 'Um unicórnio em um bolo mágico!'
     ]
 ];
-?>
-<?php
 $dcfinos = [
     [
         'imagem' => [
@@ -64,8 +62,6 @@ $dcfinos = [
         'descricao' => 'Demostre seu amor, com aquela pessoa que você ama.'
     ]
 ];
-?>
-<?php
 $brigadeiros = [
     [
         'imagem' => [
@@ -86,8 +82,6 @@ $brigadeiros = [
         'link' => 'brigadeiros-gourmets'
     ]
 ];
-?>
-<?php
 $delicias = [
     [
         'imagem' => [
@@ -108,4 +102,15 @@ $delicias = [
         ]
     ]
 ];
+$finos = [
+  "images/bombombranco.jpg",
+  "images/copouva.jpg",
+  "images/dcfinocoracao.jpg",
+  "images/dcfinoanel.jpg",
+  "images/doces2finoscopo.jpg",
+  "images/coracaoes.jpg",
+  "images/coracaomara.jpg",
+  "images/coracaorosa.jpg"
+];
+?>
 

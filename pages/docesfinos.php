@@ -1,12 +1,4 @@
-<?php
-$imagens = [
-  "images/bombombranco.jpg",
-  "images/copouva.jpg",
-  "images/dcfinocoracao.jpg",
-  "images/dcfinoanel.jpg",
-  "images/doces2finoscopo.jpg"
-];
-?>
+
 
 <style>
   .produto-carrossel-wrapper {
@@ -60,7 +52,7 @@ $imagens = [
     <!-- Imagem à esquerda (desktop) / cima (mobile) -->
     <div class="col-12 col-md-6 mb-4 mb-md-0">
       <div class="produto-carrossel-wrapper" id="carrossel-produto">
-        <?php foreach ($imagens as $i => $img): ?>
+        <?php foreach ($finos as $i => $img): ?>
           <img 
             src="<?= htmlspecialchars($img) ?>" 
             alt="Imagem <?= $i + 1 ?>"
