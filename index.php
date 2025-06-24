@@ -31,10 +31,26 @@
 
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="home">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="produtos">Produtos</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="sobre">Contato</a></li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="home">
+      <i class="fas fa-home" style="margin-right: 6px;"></i> Home
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="sobre">
+      <i class="fas fa-info-circle" style="margin-right: 6px;"></i> Sobre
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="produtos">
+      <i class="fas fa-box-open" style="margin-right: 6px;"></i> Produtos
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="contato">
+      <i class="fas fa-envelope" style="margin-right: 6px;"></i> Contato
+    </a>
+  </li>
         </ul>
       </div>
     </div>

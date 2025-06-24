@@ -38,36 +38,57 @@ $bolos = [
 ];
 ?>
 <?php
-$produtos = [
+$dcfinos = [
     [
-        'imagem' => 'images/doces2finoscopo.jpg',
+        'imagem' => [
+            'images/copouva.jpg',
+            'images/docesfinoscopo.jpg'
+        ],
         'nome' => 'Copo de chocolate ',
         'descricao' => 'Um copo de chocolate com o recheio que quiser!'
     ],
     [
-        'imagem' => 'images/bombombranco.jpg',
+        'imagem' => [
+            'images/bombombranco.jpg',
+            'images/bombomcoraama.png'
+    ],
         'nome' => 'Bombom',
         'descricao' => 'Melhor do seu jeito, chocolate? Você escolhe!'
     ],
     [
-        'imagem' => 'images/dcfinocoracao.jpg',
-        'nome' => 'Produto',
-        'descricao' => 'Coração de chocolate com recheio de chocolate,'
+        'imagem' => [
+            'images/dcfinocoracao.jpg',
+            'images/coracaoes.jpg'
     ],
-    [
-        'imagem' => 'images/docesfinoscopo.jpg',
-        'nome' => 'Copo de chocolate ',
-        'descricao' => 'Um copo de chocolate com o recheio que quiser!'
-    ],
-    [
-        'imagem' => 'images/bombombranco.jpg',
-        'nome' => 'Bombom',
-        'descricao' => 'O melhor doce do seu jeito.'
-    ],
-    [
-        'imagem' => 'images/dcfinocoracao.jpg',
-        'nome' => 'Produto 3',
-        'descricao' => 'Descrição do produto 3.'
+        'nome' => 'Coração',
+        'descricao' => 'Demostre seu amor, com aquela pessoa que você ama.'
     ]
+];
+?>
+<?php
+$brigadeiros = [
+    [
+        'imagem' => [
+            'images/tbri.jpg',
+            'images/briso.png'
+        ],
+        'nome' => 'Brigadeiros Tradicionais',
+        'descricao' => 'Os clássicos das festas brasileiras.',
+        'link' => 'brigadeiros-tradicionais'
+    ],
+    [
+        'imagem' => [
+            'images/briame.jpg',
+            'images/brigarosa.jpg'
+        ],
+        'nome' => 'Brigadeiros Gourmet',
+        'descricao' => 'Sabores irresistíveis a sua espera.',
+        'link' => 'brigadeiros-gourmets'
+    ]
+];
+?>
+<?php
+$brigadeirosG = [
+
 ];
 ?>

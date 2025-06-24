@@ -25,26 +25,19 @@ carouselElement.addEventListener('touchend', () => {
   }
 });
 
-function scrollCarousel(direction) {
-  const carousel = document.getElementById('carousel');
-  const wrapper = document.querySelector('.carousel-doces-wrapper');
-  const card = document.querySelector('.doce-card');
+function scrollCarousel(direction, carouselId, wrapperClass, cardClass) {
+  const carousel = document.getElementById(carouselId);
+  const wrapper = document.querySelector(`.${wrapperClass}`);
+  const card = document.querySelector(`.${cardClass}`);
   
   if (!carousel || !wrapper || !card) return;
-  
-  // Verifica se é dispositivo móvel
+
   const isMobile = window.innerWidth <= 768;
-  
-  let scrollDistance;
-  
-  if (isMobile) {
-    // Mobile: move card por card
-    scrollDistance = card.offsetWidth + 15; // largura do card + gap
-  } else {
-    // Desktop: move uma tela inteira
-    scrollDistance = wrapper.offsetWidth;
-  }
-  
+
+  let scrollDistance = isMobile
+    ? card.offsetWidth + 15
+    : wrapper.offsetWidth;
+
   carousel.scrollBy({
     left: scrollDistance * direction,
     behavior: 'smooth'
